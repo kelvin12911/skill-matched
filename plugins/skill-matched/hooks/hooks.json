@@ -1,0 +1,39 @@
+{
+  "description": "skill-matched: suggest matching skills per prompt; show skills/agents/plugin tools used per reply",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" prompt --runtime claude || python \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" prompt --runtime claude",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill|Agent|Task|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" record || python \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" record",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" report || python \"${CLAUDE_PLUGIN_ROOT}/scripts/skill_matched.py\" report",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

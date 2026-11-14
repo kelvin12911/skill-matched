@@ -1,0 +1,15 @@
+{
+  "name": "skill-matched",
+  "version": "1.0.0",
+  "description": "Suggests the installed skills that fit each request, and shows which skills, agents and plugin tools each reply used.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skill Matched",
+    "shortDescription": "Finds the installed skill that fits each request.",
+    "longDescription": "Searches every installed skill for each prompt and adds the best matches as context. Run the find-skill skill once and ask it to install the Codex hook to turn on automatic suggestions.",
+    "developerName": "skill-matched contributors",
+    "category": "Productivity",
+    "capabilities": ["Skill suggestions", "Skill search"],
+    "defaultPrompt": ["Set up the skill-matched hook for Codex.", "Which skill should I use to review my code?", "List every skill I have installed."]
+  }
+}

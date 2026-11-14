@@ -1,0 +1,46 @@
+{
+  "name": "skill-matched",
+  "owner": {
+    "name": "skill-matched contributors"
+  },
+  "metadata": {
+    "description": "Skill routing and workflow skills for Claude Code and Codex",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "skill-matched",
+      "source": "./plugins/skill-matched",
+      "description": "Suggests the installed skills that fit each request, and shows which skills, agents and plugin tools each reply used.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "coding",
+        "skills",
+        "skill-discovery",
+        "routing",
+        "hooks",
+        "productivity",
+        "claude-code",
+        "codex"
+      ]
+    },
+    {
+      "name": "workflow-skills",
+      "source": "./plugins/workflow-skills",
+      "description": "Four workflow skills: ship-check (pre-merge gate), source-verified-research, learn-while-coding, bilingual-study-pack.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "coding",
+        "code-review",
+        "testing",
+        "pre-merge",
+        "research",
+        "citations",
+        "learning",
+        "study"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "workflow-skills",
+  "version": "1.0.0",
+  "description": "Four workflow skills: ship-check (pre-merge gate), source-verified-research, learn-while-coding, bilingual-study-pack.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Workflow Skills",
+    "shortDescription": "Pre-merge checks, verified research, learn-first coding, bilingual study packs.",
+    "developerName": "skill-matched contributors",
+    "category": "Productivity",
+    "capabilities": ["Pre-merge checks", "Cited research", "Learning mode", "Study packs"],
+    "defaultPrompt": ["Run a ship check on this branch.", "Research this with sources I can verify.", "Teach me how this works instead of just writing it."]
+  }
+}

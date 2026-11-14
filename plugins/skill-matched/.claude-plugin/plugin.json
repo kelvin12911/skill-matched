@@ -1,0 +1,19 @@
+{
+  "name": "skill-matched",
+  "version": "1.0.0",
+  "description": "Suggests the installed skills that fit each request, and shows which skills, agents and plugin tools each reply used.",
+  "author": {
+    "name": "skill-matched contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "coding",
+    "skills",
+    "skill-discovery",
+    "routing",
+    "hooks",
+    "productivity",
+    "claude-code",
+    "codex"
+  ]
+}

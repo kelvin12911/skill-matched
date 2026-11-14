@@ -1,0 +1,19 @@
+{
+  "name": "workflow-skills",
+  "version": "1.0.0",
+  "description": "Four workflow skills: ship-check (pre-merge gate), source-verified-research, learn-while-coding, bilingual-study-pack.",
+  "author": {
+    "name": "skill-matched contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "coding",
+    "code-review",
+    "testing",
+    "pre-merge",
+    "research",
+    "citations",
+    "learning",
+    "study"
+  ]
+}
